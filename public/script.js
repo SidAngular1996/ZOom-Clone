@@ -8,9 +8,9 @@ myVideo.muted = true;
 var peer = new Peer(undefined, {
     path: '/peerjs',
     host: '/',
-    // to work on localhost give same port as node
-    port: '3030'
-    // port:'443'
+    // to work on localhost give same port as server.js
+    // port: '3030'
+    port:'443'
     // peer works on 443
 });
 
