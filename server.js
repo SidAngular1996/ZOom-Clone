@@ -37,4 +37,4 @@ io.on('connection', socket => {
 })
 //socket.emit join room and server.js accept it from socket.on
 
-server.listen(3030);
+server.listen(process.env.PORT||3030);
