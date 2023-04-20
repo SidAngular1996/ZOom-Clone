@@ -18,7 +18,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/:room',(req,res)=>{
-    res.render('room',{roomId:req.params.room})
+    res.render('roomui',{roomId:req.params.room})
 })
 
 io.on('connection', socket => {
@@ -37,4 +37,4 @@ io.on('connection', socket => {
 })
 //socket.emit join room and server.js accept it from socket.on
 
-server.listen(process.env.PORT||3030);
+server.listen(process.env.PORT||3030, console.log('node server running'));
